@@ -1,4 +1,4 @@
-#inclusw <stdio.h>
+#include <stdio.h>
 /*
  * main A program that print exactly with grammer
  * Return: 0 (Success)
