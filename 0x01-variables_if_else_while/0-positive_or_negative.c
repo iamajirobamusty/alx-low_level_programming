@@ -4,7 +4,7 @@
 /* more headers goes there */
 /**
  * main - A program that assign a random number 
- *Return: 0 (Success)
+ * Return: 0 (Success)
  */
 int main(void)
 {
