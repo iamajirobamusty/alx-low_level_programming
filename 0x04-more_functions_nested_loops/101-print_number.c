@@ -6,20 +6,16 @@
  */
 void print_number(int n)
 {
-	unsigned int n1;
+	unsigned int i = n;
 
 	if (n < 0)
 	{
-		n1 = -n;
-		_putchae(n1);
+		_putchae(48);
+		i = -i;
 	}
-	else
+	if (i / 10)
 	{
-		n1 = n;
+		priny_number(i / 10);
 	}
-	if (n1 / 10)
-	{
-		priny_number(n1 / 10);
-	}
-	_putchar((n1 % 10) + '0');
+	_putchar(i % 10 + '0');
 }
