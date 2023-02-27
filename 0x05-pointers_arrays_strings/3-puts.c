@@ -3,7 +3,7 @@
  * _puts - prints a string to standard output
  * @str: string to print
  */
-voind _puts(char *str)
+void _puts(char *str)
 {
 	while(*str != '\0')
 	{
