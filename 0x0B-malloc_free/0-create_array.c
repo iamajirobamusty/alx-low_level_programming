@@ -1,0 +1,25 @@
+#include "main.h"
+#include <stdlib.h>
+
+/**
+ * create_array - create an array and initialize it with a constant
+ * @size: size of the array
+ * @c: constant value
+ *
+ * Return: pointer to array,NULL if failed
+ */
+
+char *create_array(unsigned int size, char c)
+{
+	char *str;
+	int i;
+
+	str = malloc(sizeof(char) * size);
+	if (size == 0 || str == NULL)
+		return (NULL);
+	for (i = 0; i < size; i++)
+	{
+		str[i] = c;
+	}
+	return (str);
+}
