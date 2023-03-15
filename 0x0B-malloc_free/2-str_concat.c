@@ -25,6 +25,8 @@ char *str_concat(char *s1, char *s2)
 	while (s2[j] != '\0')
 		j++;
 	sum = malloc(sizeof(char) * (i + j + 1));
+	if (sum == NULL)
+		return (NULL);
 	i = j = 0;
 	for (; s1[1] != '\0'; i++)
 		sum[i] = s1[i];
@@ -34,7 +36,5 @@ char *str_concat(char *s1, char *s2)
 		i++;
 	}
 	sum[i] = '\0';
-	if (sum == NULL)
-		return (NULL);
 	return (sum);
 }
