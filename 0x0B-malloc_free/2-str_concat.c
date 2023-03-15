@@ -31,7 +31,7 @@ char *str_concat(char *s1, char *s2)
 	for (; s2[j] != '\0'; j++)
 	{
 		sum[i] = s2[j];
-		i++
+		i++;
 	}
 	sum[i] = '\0';
 	if (sum == NULL)
