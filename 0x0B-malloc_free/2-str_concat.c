@@ -29,7 +29,10 @@ char *str_concat(char *s1, char *s2)
 	for (; s1[1] != '\0'; i++)
 		sum[i] = s1[i];
 	for (; s2[j] != '\0'; j++)
+	{
 		sum[i] = s2[j];
+		i++
+	}
 	sum[i] = '\0';
 	if (sum == NULL)
 		return (NULL);
