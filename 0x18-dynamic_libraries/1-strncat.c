@@ -1,4 +1,4 @@
-#include "mainn.h"
+#include "main.h"
 /**
 * *_strncat - concatenates 2 strings
 * @dest: the target string
